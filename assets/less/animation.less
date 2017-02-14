@@ -1,0 +1,260 @@
+/**动画相关*/
+.tupu-fade{
+    &-transition{
+        opacity: 1;
+        transition: opacity .6s ease;    
+    }
+
+    &-enter, &-leave{
+        opacity: 0;   
+    }
+}
+
+.tupu-zoom{
+    &-transition{
+    }
+
+    &-enter{
+        animation: zoomIn .3s;
+    }
+
+    &-leave{
+        animation: zoomOut .5s; 
+    }
+}
+
+@keyframes scaleToFadeIn {
+    0% {
+        transform-origin: center center;
+        transform: scale(0, 0);
+    }
+    20% {
+        transform-origin: center center;
+        transform: scale(1, 1);
+    }
+    50% {
+        transform-origin: center center;
+        transform: scale(1.16, 1.16);
+    }
+    80% {
+        transform-origin: center center;
+        transform: scale(0.8, 0.8);
+    }
+    100% {
+        transform-origin: center center;
+        transform: scale(1, 1);
+    }
+}    
+
+@keyframes scaleToFadeOut {
+    0%{
+        transform-origin: center center;
+        transform: scale(1, 1);     
+    }
+    100%{
+        transform-origin: center center;
+        transform: scale(0, 0);
+    }   
+}    
+
+/**破碎的心左边*/
+@keyframes breakHeartLeft {
+    0% {
+        opacity: 1;
+        transform: rotate(0deg);
+        transform-origin: right bottom;
+    }
+    10% {
+        transform: rotate(-5deg);
+        transform-origin: right bottom;
+    }
+    30% {
+        transform: rotate(-15deg);
+        transform-origin: right bottom;
+    }
+    50% {
+        transform: rotate(-20deg);
+        transform-origin: right bottom;
+    }
+    60% {
+        transform-origin: right bottom;
+    }
+    70% {
+        transform: rotate(-30deg);
+        transform-origin: right bottom;
+    }
+    80% {
+        transform: rotate(-40deg);
+        transform-origin: right bottom;
+    }
+    100% {
+        opacity: 0.5;
+        transform: rotate(-50deg);
+        transform-origin: right bottom;
+    }
+}
+
+/**破碎的心右边*/
+@keyframes breakHeartReft {
+    0% {
+        opacity: 1;
+        transform: rotate(0deg);
+        transform-origin: left bottom;
+    }
+    10% {
+        transform: rotate(5deg);
+        transform-origin: left bottom;
+    }
+    30% {
+        transform: rotate(10deg);
+        transform-origin: left bottom;
+    }
+    50% {
+        transform: rotate(15deg);
+        transform-origin: left bottom;
+    }
+    60% {
+        transform: rotate(20deg);
+        transform-origin: left bottom;
+    }
+    70% {
+        transform: rotate(25deg);
+        transform-origin: left bottom;
+    }
+    80% {
+        transform: rotate(30deg);
+        transform-origin: left bottom;
+    }
+    100% {
+        opacity: 0.5;
+        transform: rotate(40deg);
+        transform-origin: left bottom;
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        opacity: 0;
+        transform: scale3d(.2, .2, .2);
+    }
+
+    50% {
+        opacity: 1
+    }
+}
+
+@keyframes zoomOut {
+    0% {
+        opacity: 1
+    }
+
+    50% {
+        opacity: 0;
+        transform: scale3d(.2, .2, .2);
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+        transform-origin: center center;
+    }
+    20% {
+        transform: rotate(60deg);
+        transform-origin: center center;
+    }
+    40% {
+        transform: rotate(120deg);
+        transform-origin: center center;
+    }
+    60% {
+        transform: rotate(180deg);
+        transform-origin: center center;
+    }
+    80% {
+        transform: rotate(270deg);
+        transform-origin: center center;
+    }
+    100% {
+        transform: rotate(360deg);
+        transform-origin: center center;
+    }
+}
+
+
+@keyframes square1{
+    0% {
+        background: #fff;
+        opacity: 1;
+    }
+    25% {
+        background: #fff;
+        opacity: .7;
+    }
+    50% {
+        background: #fff;
+        opacity: .5;
+    }
+    75% {
+        background: #fff;
+        opacity: .3;
+    }
+}
+@keyframes square2{
+    0% {
+        background: #fff;
+        opacity: .7;
+    }
+    25% {
+        background: #fff;
+        opacity: .5;
+    }
+    50% {
+        background: #fff;
+        opacity: .3;
+    }
+    75% {
+        background: #fff;
+        opacity: 1;
+    }
+}
+@keyframes square3{
+    0% {
+        background: #fff;
+        opacity: .5;
+    }
+    25% {
+        background: #fff;
+        opacity: .3;
+    }
+    50% {
+        background: #fff;
+        opacity: 1;
+    }
+    75% {
+        background: #fff;
+        opacity: .7;
+    }
+}
+@keyframes square4{
+    0% {
+        background: #fff;
+        opacity: .3;
+    }
+    25% {
+        background: #fff;
+        opacity: 1;
+    }
+    50% {
+        background: #fff;
+        opacity: .7;
+    }
+    75% {
+        background: #fff;
+        opacity: .5;
+    }
+}

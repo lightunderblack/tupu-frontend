@@ -1,0 +1,46 @@
+@import "variable.less";
+
+/**置顶*/
+.tp-post-top(){
+    &.tp-post-icon{
+        top: 6px;
+        width: 40px;
+        height: 40px;
+        position: relative;
+        background: url("@{imgPath}/Top_word_gray_40.png") no-repeat center center;   
+    }
+}
+
+/**未赞*/
+.tp-post-like-black(){
+	&.tp-post-icon{		
+		background-position: -447px 0;    
+	}
+}
+
+/**已赞*/
+.tp-post-liked-black(){
+	&.tp-post-icon{
+		background-position: -395px 0;	
+	}	
+}
+
+/**评论透明*/
+.tp-post-comment-opacity(){
+	&.tp-post-icon{
+	    width: 53px;
+	    height: 47px;
+    	background: url("@{imgPath}/comment_opacity.png") no-repeat center -2px;	
+	}	
+}
+
+/**删除评论*/
+.tp-post-comment-delete(){
+	&.tp-post-icon{
+		top: 3px;
+		width: 19px;
+		height: 23px;
+		position: relative;
+		 background: url("@{imgPath}/trash_gray.png") no-repeat;
+	}
+}

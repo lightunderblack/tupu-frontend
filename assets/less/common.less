@@ -1,0 +1,76 @@
+@import "base.less";
+@import "reset.less";
+@import "animation.less";
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{
+    color: #CCC;
+}
+
+input, textarea{
+    outline: none;
+}
+
+html, body, .tp-container{
+    height: 100%;
+}
+
+.icon-sprite{
+    display: inline-block;
+}
+
+.text{
+    &-center{
+        text-align: center;  
+    }
+
+    &-left {
+        text-align: left;
+    }
+
+    &-right {
+        text-align: right;
+    }
+
+    &-warning{
+        color: red;
+    }
+}
+
+.tp-{
+    &-left{
+        float: left;
+    }
+
+    &-right{
+        float: right;
+    }
+}
+
+.word-break{
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.inline-block{
+    display: inline-block;
+}
+
+.ellipsis{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.tp-container{
+    margin: 0 auto;
+    min-height: 100%;
+    position: relative;
+    background: #E4E4E4;
+    width: @viewpoint-width;
+
+    .tp-container-info{
+        top: 105px;
+        position: relative;
+    }     
+}
+
